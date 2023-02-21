@@ -307,13 +307,13 @@ service-account-key.pem
 service-account.pem
 ```
 
-メモ：ここでChmodが必要
+
 ### Distribute the Client and Server Certificates
 worker_instance=[k8s-dev-worker-0,k8s-dev-worker-1,k8s-dev-worker-2,…]
 ```
 scp ca.pem ${worker-instance}-key.pem ${worker-instance}.pem ${worker-instance}:~/
 ```
-
+メモ：↑ここでChmodが必要
 controller_instance=[k8s-dev-controller-0,k8s-dev-controller-1,k8s-dev-controller-2,…]
 ```
 scp ca.pem ca-key.pem kubernetes-key.pem kubernetes.pem \
