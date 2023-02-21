@@ -11,3 +11,4 @@
 + [Deploying the DNS Cluster Add-on](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/10-Deploying%20the%20DNS%20Cluster%20Add-on.md)
 + [Octant and antrea-octant-plugin installation](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/11-Octant%20and%20antrea-octant-plugin%20installation.md)
 + [Avi Deployment Guide for Microsoft Azure](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/12-Avi%20Deployment%20Guide%20for%20Microsoft%20Azure.md)
++ [NGINX Ingress Controller Installation](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/13-NGINX%20Ingress%20Controller%20Installation.md)
