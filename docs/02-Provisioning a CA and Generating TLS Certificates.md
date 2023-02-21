@@ -306,6 +306,8 @@ Results:
 service-account-key.pem
 service-account.pem
 ```
+
+メモ：ここでChmodが必要
 ### Distribute the Client and Server Certificates
 worker_instance=[k8s-dev-worker-0,k8s-dev-worker-1,k8s-dev-worker-2,…]
 ```
