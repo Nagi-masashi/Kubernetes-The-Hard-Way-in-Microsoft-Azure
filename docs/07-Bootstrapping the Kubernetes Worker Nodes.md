@@ -228,6 +228,8 @@ NAME       STATUS   ROLES    AGE   VERSION
 worker-0   Ready    <none>   22s   v1.24.0
 ```
 
+メモ：workerに戻る
+
 ## Configuring iptables
 kubernetesがnftables未対応のためlegacy modeへ変更
 ```
