@@ -9,7 +9,7 @@ kubectl apply -f antrea.yaml
 ```
 ## Traceflow User Guide
 ### Prerequisites
-antrea-configのtraceflowを有効にする
+antrea.ymlのantrea-configにあるtraceflowを有効にします
 
 agentのAntreaProxyも有効にする必要があります
 ```
