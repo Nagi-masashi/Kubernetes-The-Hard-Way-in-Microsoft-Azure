@@ -1,6 +1,6 @@
 # Octant and antrea-octant-plugin installation
 ```
-wget https://github.com/antrea-io/antrea/blob/main/build/yamls/antrea-octant.yml
+wget https://raw.githubusercontent.com/antrea-io/antrea/main/build/yamls/antrea-octant.yml
 ```
 admin.kubeconfig のserverをkubernetes_public_ipに変える(新しくoctant.kubeconfigとした)
 ```
