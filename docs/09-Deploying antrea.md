@@ -5,7 +5,7 @@ wget https://raw.githubusercontent.com/antrea-io/antrea/main/build/yamls/antrea.
 antrea.yamlのvalidatingwebhookconfiguration.WebHooks.name.rule.apiVersionsを["v1"]に変更(9ヶ所)
 
 ```
-kubectl apply -f antrea.yaml
+kubectl apply -f antrea.yml
 ```
 ## Traceflow User Guide
 ### Prerequisites
