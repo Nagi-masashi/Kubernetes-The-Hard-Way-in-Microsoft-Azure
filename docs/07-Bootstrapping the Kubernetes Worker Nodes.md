@@ -118,6 +118,7 @@ LimitCORE=infinity
 WantedBy=multi-user.target
 EOF
 ```
+### Configure runtime-endpoint
 ```
 sudo vi /etc/crictl.yaml
 ```
