@@ -118,6 +118,17 @@ LimitCORE=infinity
 WantedBy=multi-user.target
 EOF
 ```
+```
+sudo vi /etc/crictl.yaml
+```
+```
+untime-endpoint: unix:///var/run/containerd/containerd.sock
+image-endpoint: ""
+timeout: 0
+debug: false
+pull-image-on-create: false
+disable-pull-on-run: false
+```
 ## Configure the Kubelet
 HOSTNAMEは操作しているworkerのhostname
 ```
