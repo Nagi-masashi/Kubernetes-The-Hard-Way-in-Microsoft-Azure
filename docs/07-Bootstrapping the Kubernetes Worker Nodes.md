@@ -123,7 +123,7 @@ EOF
 sudo vi /etc/crictl.yaml
 ```
 ```
-untime-endpoint: unix:///var/run/containerd/containerd.sock
+runtime-endpoint: unix:///var/run/containerd/containerd.sock
 image-endpoint: ""
 timeout: 0
 debug: false
