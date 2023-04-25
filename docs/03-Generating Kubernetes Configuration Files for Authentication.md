@@ -134,10 +134,10 @@ admin.kubeconfig
 ## Distribute the Kubernetes Configuration Files
 worker_instance=[k8s-dev-worker-0,k8s-dev-worker-1,k8s-dev-worker-2,…]
 ```
-scp ${worker-instance}.kubeconfig kube-proxy.kubeconfig ${worker-instance}:~/
+scp -i <pem file path> ${worker-instance}.kubeconfig kube-proxy.kubeconfig ${worker-instance}:~/
 ```
 
 controller_instance=[k8s-dev-controller-0,k8s-dev-controller-1,k8s-dev-controller-2,…]
 ```
-scp admin.kubeconfig kube-controller-manager.kubeconfig kube-scheduler.kubeconfig ${controller-instance}:~/
+scp -i <pem file path> admin.kubeconfig kube-controller-manager.kubeconfig kube-scheduler.kubeconfig ${controller-instance}:~/
 ```
