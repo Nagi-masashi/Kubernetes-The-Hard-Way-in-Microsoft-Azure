@@ -1,6 +1,6 @@
 # Generating Kubernetes Configuration Files for Authentication
 ## The kubelet Kubernetes Configuration File
-worker_instance=[k8s-dev-worker-0,k8s-dev-worker-1,k8s-dev-worker-2,…]
+worker_instance = [k8s-dev-worker-0, k8s-dev-worker-1, k8s-dev-worker-2,…]
 ```
 kubectl config set-cluster kubernetes-the-hard-way \
     --certificate-authority=ca.pem \
@@ -132,12 +132,12 @@ Results:
 admin.kubeconfig
 ```
 ## Distribute the Kubernetes Configuration Files
-worker_instance=[k8s-dev-worker-0,k8s-dev-worker-1,k8s-dev-worker-2,…]
+worker_instance = [k8s-dev-worker-0, k8s-dev-worker-1, k8s-dev-worker-2,…]
 ```
 scp -i <pem file path> ${worker-instance}.kubeconfig kube-proxy.kubeconfig ${worker-instance}:~/
 ```
 
-controller_instance=[k8s-dev-controller-0,k8s-dev-controller-1,k8s-dev-controller-2,…]
+controller_instance = [k8s-dev-controller-0, k8s-dev-controller-1, k8s-dev-controller-2,…]
 ```
 scp -i <pem file path> admin.kubeconfig kube-controller-manager.kubeconfig kube-scheduler.kubeconfig ${controller-instance}:~/
 ```
