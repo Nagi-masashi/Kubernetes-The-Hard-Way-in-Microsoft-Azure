@@ -309,11 +309,11 @@ service-account.pem
 
 
 ### Distribute the Client and Server Certificates
-worker_instance=[k8s-dev-worker-0, k8s-dev-worker-1, k8s-dev-worker-2,…]
+worker_instance = [k8s-dev-worker-0, k8s-dev-worker-1, k8s-dev-worker-2,…]
 ```
 scp -i <pem file path> ca.pem ${worker-instance}-key.pem ${worker-instance}.pem ${worker-instance}:~/
 ```
-controller_instance=[k8s-dev-controller-0, k8s-dev-controller-1, k8s-dev-controller-2,…]
+controller_instance = [k8s-dev-controller-0, k8s-dev-controller-1, k8s-dev-controller-2,…]
 ```
 scp -i <pem file path> ca.pem ca-key.pem kubernetes-key.pem kubernetes.pem \
     service-account-key.pem service-account.pem ${controller-instance}:~/
