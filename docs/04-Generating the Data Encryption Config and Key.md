@@ -25,5 +25,5 @@ resources:
 
 controller_instance=[k8s-dev-controller-0,k8s-dev-controller-1,k8s-dev-controller-2,…]
 ```
-scp encryption-config.yaml ${instance}:~/
+scp -i <pem file path> encryption-config.yaml ${instance}:~/
 ```
