@@ -23,7 +23,7 @@ Results:
 ${worker-instance}.kubeconfig
 ```
 ## The kube-proxy Kubernetes Configuration File
-KUBERNETES_PUBLIC_ADDRESS=controller_loadbalancer(シングルノードの場合、controller_ip)
+KUBERNETES_PUBLIC_ADDRESS = controller_loadbalancer (シングルノードの場合はcontroller_ip)
 ```
 kubectl config set-cluster kubernetes-the-hard-way \
     --certificate-authority=ca.pem \
