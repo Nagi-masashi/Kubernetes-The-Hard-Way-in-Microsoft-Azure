@@ -45,7 +45,7 @@ cniPlugin: 'antrea'
 
 vipNetworkList:
 
- - networkName: "network" //avi_controllerで先に設定する VSのcidr範囲
+ - networkName: "network" ※avi_controllerで先に設定する
  
  - cidr: "10.0.0.0/16"
    
