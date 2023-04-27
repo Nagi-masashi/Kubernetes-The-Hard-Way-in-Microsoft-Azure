@@ -13,10 +13,10 @@ kubectl config set-credentials system:node:${worker-instance} --client-certifica
 ```
 kubectl config set-context default \
     --cluster=kubernetes-the-hard-way \
-    --user=system:node:${worker-instance} --kubeconfig=${worker_instance}.kubeconfig
+    --user=system:node:${worker-instance} --kubeconfig=${worker-instance}.kubeconfig
 ```
 ```
-kubectl config use-context default --kubeconfig=${worker_instance}.kubeconfig
+kubectl config use-context default --kubeconfig=${worker-instance}.kubeconfig
 ```
 Results:
 ```
