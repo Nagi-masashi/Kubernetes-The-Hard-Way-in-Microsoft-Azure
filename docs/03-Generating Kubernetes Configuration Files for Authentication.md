@@ -8,7 +8,7 @@ kubectl config set-cluster kubernetes-the-hard-way \
     --server=https://${KUBERNETES_PUBLIC_ADDRESS}:6443 --kubeconfig=${worker_instance}.kubeconfig
 ```
 ```
-kubectl config set-credentials system:node:${worker-instance} --client-certificate=${instance}.pem --client-key=${instance}-key.pem --embed-certs=true --kubeconfig=${worker_instance}.kubeconfig
+kubectl config set-credentials system:node:${worker-instance} --client-certificate=${worker-instance}.pem --client-key=${instance}-key.pem --embed-certs=true --kubeconfig=${worker_instance}.kubeconfig
 ```
 ```
 kubectl config set-context default \
