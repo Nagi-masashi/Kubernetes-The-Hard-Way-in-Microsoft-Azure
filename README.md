@@ -2,7 +2,8 @@
 [Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way) is a tutorial on building a Kubernetes cluster on GCP.
 It is published on GitHub.
 This time it was built on azure, not on GCP.
-Kubernetes version is from 1.21 to 1.24.
+Kubernetes version is from 1.21 to 1.24.  
+I also installed Octant, antrea-octant-plugin, Antrea Container Networking and AVI Kubernetes Operator (AKO) for Ingress.
 
 # Cluster Details
 + kubernetes v1.24.0
