@@ -1,9 +1,15 @@
-# Kubernetes The Hard Way in azure environment
-### [Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way) is a tutorial on building a Kubernetes cluster on GCP.
+# Kubernetes The Hard Way in Microsoft Azure
+[Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way) is a tutorial on building a Kubernetes cluster on GCP.
+It is published on GitHub.
+This time it was built on azure, not on GCP.
+Kubernetes version is from 1.21 to 1.24.
 
-### It is published on GitHub.
- 
-### This time it was built on azure, not on GCP.
+# Cluster Details
++ kubernetes v1.24.0
++ containerd v1.4.4
++ coredns v1.8
++ cni v0.9.1
++ etcd v3.4.15
 
 # kubernetes
 + [Installing the Client Tools](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/01-Installing%20the%20Client%20Tools.md)
