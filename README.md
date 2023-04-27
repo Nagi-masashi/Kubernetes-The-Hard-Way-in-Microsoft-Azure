@@ -1,3 +1,6 @@
+# Kubernetes The Hard Way in azure environment
+[Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way) is a tutorial on building a Kubernetes cluster on GCP. It is published on GitHub.
+This time it was built on azure, not on GCP.
 # kubernetes
 + [Installing the Client Tools](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/01-Installing%20the%20Client%20Tools.md)
 + [Provisioning a CA and Generating TLS Certificates](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/02-Provisioning%20a%20CA%20and%20Generating%20TLS%20Certificates.md)
