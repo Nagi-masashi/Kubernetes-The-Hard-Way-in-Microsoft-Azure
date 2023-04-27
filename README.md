@@ -12,6 +12,7 @@ Kubernetes version is from 1.21 to 1.24.
 + etcd v3.4.15
 
 # kubernetes
++ [Prerequisites](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/00-Prerequisites.md)
 + [Installing the Client Tools](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/01-Installing%20the%20Client%20Tools.md)
 + [Provisioning a CA and Generating TLS Certificates](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/02-Provisioning%20a%20CA%20and%20Generating%20TLS%20Certificates.md)
 + [Generating Kubernetes Configuration Files for Authentication](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/03-Generating%20Kubernetes%20Configuration%20Files%20for%20Authentication.md)
