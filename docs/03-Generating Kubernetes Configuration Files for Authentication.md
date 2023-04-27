@@ -8,19 +8,19 @@ kubectl config set-cluster kubernetes-the-hard-way \
     --server=https://${KUBERNETES_PUBLIC_ADDRESS}:6443 --kubeconfig=${worker_instance}.kubeconfig
 ```
 ```
-kubectl config set-credentials system:node:${worker-instance} --client-certificate=${worker-instance}.pem --client-key=${instance}-key.pem --embed-certs=true --kubeconfig=${worker_instance}.kubeconfig
+kubectl config set-credentials system:node:${worker_instance} --client-certificate=${worker_instance}.pem --client-key=${worker_instance}-key.pem --embed-certs=true --kubeconfig=${worker_instance}.kubeconfig
 ```
 ```
 kubectl config set-context default \
     --cluster=kubernetes-the-hard-way \
-    --user=system:node:${worker-instance} --kubeconfig=${worker-instance}.kubeconfig
+    --user=system:node:${worker_instance} --kubeconfig=${worker_instance}.kubeconfig
 ```
 ```
-kubectl config use-context default --kubeconfig=${worker-instance}.kubeconfig
+kubectl config use-context default --kubeconfig=${worker_instance}.kubeconfig
 ```
 Results:
 ```
-${worker-instance}.kubeconfig
+${worker_instance}.kubeconfig
 ```
 ## The kube-proxy Kubernetes Configuration File
 KUBERNETES_PUBLIC_ADDRESS = controller_loadbalancer (シングルノードの場合はcontroller_ip)
@@ -134,10 +134,10 @@ admin.kubeconfig
 ## Distribute the Kubernetes Configuration Files
 worker_instance = [k8s-dev-worker-0, k8s-dev-worker-1, k8s-dev-worker-2,…]
 ```
-scp -i <pem file path> ${worker-instance}.kubeconfig kube-proxy.kubeconfig ${worker-instance}:~/
+scp -i <pem file path> ${worker_instance}.kubeconfig kube-proxy.kubeconfig ${worker_instance}:~/
 ```
 
 controller_instance = [k8s-dev-controller-0, k8s-dev-controller-1, k8s-dev-controller-2,…]
 ```
-scp -i <pem file path> admin.kubeconfig kube-controller-manager.kubeconfig kube-scheduler.kubeconfig ${controller-instance}:~/
+scp -i <pem file path> admin.kubeconfig kube-controller-manager.kubeconfig kube-scheduler.kubeconfig ${controller_instance}:~/
 ```
