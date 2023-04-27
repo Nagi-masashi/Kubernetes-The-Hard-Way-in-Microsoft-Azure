@@ -53,7 +53,7 @@ serviceType: "NodePort"
 
 controllerVersion: '22.1.1'
 
-controllerHost: '20.46.116.91'
+controllerHost: Controller Public IP
 
 avicredentials:
 
