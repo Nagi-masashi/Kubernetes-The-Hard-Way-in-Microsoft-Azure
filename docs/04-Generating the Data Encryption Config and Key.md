@@ -3,7 +3,7 @@
 ```
 head -c 32 /dev/urandom | base64
 ```
-出力されたものを${ENCRYPTION_KEY}とする
+Let the output be ${ENCRYPTION_KEY}
 
 ## The Encryption Config File
 ```
