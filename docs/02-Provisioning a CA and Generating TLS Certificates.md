@@ -86,11 +86,11 @@ admin-key.pem
 admin.pem
 ```
 ### The Kubelet Client Certificates
-worker_instance=[k8s-dev-worker-0, k8s-dev-worker-1, k8s-dev-worker-2,…]
+worker_instance = [k8s-dev-worker-0, k8s-dev-worker-1, k8s-dev-worker-2,…]
 
-EXTERNAL_IP=woker-instance_public_ip
+EXTERNAL_IP = worker-instance_public_ip(None if not set)
 
-INTERNAL_IP=worker-instance_private_ip
+INTERNAL_IP = worker-instance_private_ip
 ```
 vi ${worker_instance}-csr.json
 ```
@@ -236,7 +236,7 @@ kube-scheduler-key.pem
 kube-scheduler.pem
 ```
 ### The Kubernetes API Server Certificate
-KUBERNETES_PUBLIC_ADDRESS = controller_loadbalancer (シングルノードの場合はcontroller_ip)
+KUBERNETES_PUBLIC_ADDRESS = controller_loadbalancer (controller_ip for single node)
 ```
 cat > kubernetes-csr.json <<EOF
 {
