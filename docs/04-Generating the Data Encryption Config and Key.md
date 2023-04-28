@@ -27,3 +27,6 @@ controller_instance = [k8s-dev-controller-0, k8s-dev-controller-1, k8s-dev-contr
 ```
 scp -i <pem file path> encryption-config.yaml ${instance}:~/
 ```
+
+Next: [Bootstrapping the etcd Cluster](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/05-Bootstrapping%20the%20etcd%20Cluster.md)  
+Prev: [Generating Kubernetes Configuration Files for Authentication](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/03-Generating%20Kubernetes%20Configuration%20Files%20for%20Authentication.md)
