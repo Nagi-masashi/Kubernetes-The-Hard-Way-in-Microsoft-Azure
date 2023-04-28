@@ -1,7 +1,9 @@
 # Prerequisites
 ## Azure Virtual Machines
 This tutorial builds a cluster with a single node,I used bastion,controller,worker as VM configuration.  
-Supplements for multi-node are also included.
+Supplements for multi-node are also included.  
+When building with a single node, the ip of the controller node will be the public_ip of kubernetes.  
+When building with multiple nodes, set up a Loadbalancer for the controller node. This LoadBalancer ip will be kubernetes public_ip.
 
 ### Detailed conditions for Azure Virtual Machines.
 OS. 
