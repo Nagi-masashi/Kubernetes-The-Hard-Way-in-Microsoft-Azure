@@ -141,3 +141,6 @@ controller_instance = [k8s-dev-controller-0, k8s-dev-controller-1, k8s-dev-contr
 ```
 scp -i <pem file path> admin.kubeconfig kube-controller-manager.kubeconfig kube-scheduler.kubeconfig ${controller_instance}:~/
 ```
+
+Next: [Generating the Data Encryption Config and Key](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/04-Generating%20the%20Data%20Encryption%20Config%20and%20Key.md)  
+Prev: [Provisioning a CA and Generating TLS Certificates](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/02-Provisioning%20a%20CA%20and%20Generating%20TLS%20Certificates.md)
