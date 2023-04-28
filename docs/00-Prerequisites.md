@@ -12,15 +12,15 @@ Size.
 Standard D2as v4 (2 vcpu 、8 GiB memory).  
 
 + bastion.  
-Name. k8s-dev-bastion.  
+Name. k8s-dev-bastion  
 Public IP　yes
 
 + controller.  
-Name. k8s-dev-controller-0.  
+Name. k8s-dev-controller-0  
 Public IP　no
 
 + worker.  
-Name. k8s-dev-worker-0.  
+Name. k8s-dev-worker-0  
 Public IP　no
 
 Next: [Installing the Client Tools](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/01-Installing%20the%20Client%20Tools.md)
