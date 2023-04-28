@@ -318,3 +318,6 @@ controller_instance = [k8s-dev-controller-0, k8s-dev-controller-1, k8s-dev-contr
 scp -i <pem file path> ca.pem ca-key.pem kubernetes-key.pem kubernetes.pem \
     service-account-key.pem service-account.pem ${controller-instance}:~/
 ```
+
+Next: [Generating Kubernetes Configuration Files for Authentication](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/03-Generating%20Kubernetes%20Configuration%20Files%20for%20Authentication.md)  
+Prev: [Installing the Client Tools](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/01-Installing%20the%20Client%20Tools.md)
