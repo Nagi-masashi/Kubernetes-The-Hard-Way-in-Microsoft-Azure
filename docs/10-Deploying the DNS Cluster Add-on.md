@@ -8,7 +8,7 @@ kubectl apply -f https://storage.googleapis.com/kubernetes-the-hard-way/coredns-
 ```
 kubectl get pods -l k8s-app=kube-dns -n kube-system
 ```
-output
+Output
 ```
 NAME                       READY   STATUS    RESTARTS   AGE
 coredns-8494f9c688-hh7r2   1/1     Running   0          10s
@@ -20,7 +20,7 @@ kubectl run busybox --image=busybox:1.28 --command -- sleep 3600
 ```
 kubectl get pods -l run=busybox
 ```
-output
+Output
 ```
 NAME      READY   STATUS    RESTARTS   AGE
 busybox   1/1     Running   0          3s
@@ -28,7 +28,7 @@ busybox   1/1     Running   0          3s
 ```
 kubectl exec -ti busybox -- nslookup kubernetes
 ```
-ouotput
+Output
 ```
 Server:    10.32.0.10
 Address 1: 10.32.0.10 kube-dns.kube-system.svc.cluster.local
