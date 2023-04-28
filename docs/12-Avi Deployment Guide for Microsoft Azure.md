@@ -1,10 +1,10 @@
 # Avi Deployment Guide for Microsoft Azure
 ## Avi Controller Instantiation
-azureVM VMware NSX Advanced Load Balancer (Avi Networks)をmarketplaceで選択し、VMを建てる
+Select azureVM VMware NSX Advanced Load Balancer (Avi Networks) on the marketplace and build a VM.
 
-容量が最低memory28GB,CPU8必要
+Minimum memory 28GB, 8CPU required.
 
-認証はスキップしてwebブラウザで開く
+Skip authentication and open in web browser.
 
 ## Install helm
 ```
@@ -53,7 +53,7 @@ serviceType: "NodePort"
 
 controllerVersion: '22.1.1'
 
-controllerHost: Controller Public IP
+controllerHost: kubernetes Public IP
 
 avicredentials:
 
