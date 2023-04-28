@@ -2,16 +2,16 @@
 ```
 wget https://raw.githubusercontent.com/antrea-io/antrea/main/build/yamls/antrea.yml
 ```
-antrea.yamlのvalidatingwebhookconfiguration.WebHooks.rules.apiVersionsを["v1"]に変更(9ヶ所)
+Change validatingwebhookconfiguration.WebHooks.rules.apiVersions in antrea.yaml to ["v1"] (9 places).
 
 ```
 kubectl apply -f antrea.yml
 ```
 ## Traceflow User Guide
 ### Prerequisites
-antrea.ymlのantrea-configにあるtraceflowを有効にします
+Enable traceflow in antrea-config in antrea.yml.
 
-agentのAntreaProxyも有効にする必要があります
+The agent's AntreaProxy must also be enabled.
 ```
 apiVersion: v1
 data:
