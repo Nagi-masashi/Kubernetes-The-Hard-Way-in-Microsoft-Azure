@@ -52,9 +52,9 @@ sudo mkdir -p \
 ```
 ## Configure CNI Networking
 
-podCIDRはnode内のpod_cidr
+podCIDR is the pod_cidr inside the node.
 
-kubernetes control manager で設定したcluster_cidrの範囲内にすること(設定変更可能)
+Must be within the cluster_cidr range set by kubernetes control manager (settings can be changed).
 ```
 cat <<EOF | sudo tee /etc/cni/net.d/10-bridge.conf
 {
@@ -134,7 +134,7 @@ pull-image-on-create: false
 disable-pull-on-run: false
 ```
 ## Configure the Kubelet
-HOSTNAMEは操作しているworkerのhostname
+HOSTNAME is the hostname of the worker you are working with.
 ```
 {
   sudo mv ${HOSTNAME}-key.pem ${HOSTNAME}.pem /var/lib/kubelet/
