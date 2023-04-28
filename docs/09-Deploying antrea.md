@@ -32,3 +32,6 @@ antrea-controller.conf: |
     # Enable traceflow which provides packet tracing feature to diagnose network issue.
       Traceflow: true
 ```
+
+Next: [Deploying the DNS Cluster Add-on](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/10-Deploying%20the%20DNS%20Cluster%20Add-on.md)  
+Prev: [Configuring kubectl for Remote Access](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/08-Configuring%20kubectl%20for%20Remote%20Access.md)
