@@ -52,6 +52,10 @@ sudo mkdir -p \
 }
 ```
 ## Configure CNI Networking
+
+podCIDRはnode内のpod_cidr
+
+kubernetes control manager で設定したcluster_cidrの範囲内にすること(設定変更可能)
 ```
 cat <<EOF | sudo tee /etc/cni/net.d/10-bridge.conf
 {
