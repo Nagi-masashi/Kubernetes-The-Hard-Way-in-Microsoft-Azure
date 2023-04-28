@@ -2,7 +2,7 @@
 ```
 wget https://raw.githubusercontent.com/antrea-io/antrea/main/build/yamls/antrea-octant.yml
 ```
-admin.kubeconfig のserverをkubernetes_public_ipに変える(新しくoctant.kubeconfigとした)
+admin.kubeconfig のserverをkubernetes_public_ipに変える(admin.kubeconfigをコピーして修正し、新しくoctant.kubeconfigとした)
 ```
 kubectl create secret generic octant-kubeconfig --from-file=admin.conf=octant.kubeconfig -n kube-system
 ```
