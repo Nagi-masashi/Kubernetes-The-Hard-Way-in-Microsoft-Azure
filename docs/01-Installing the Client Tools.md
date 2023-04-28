@@ -12,7 +12,7 @@ chmod +x cfssl cfssljson
 sudo mv cfssl cfssljson /usr/local/bin/
 ```
 ### Verification
-#### Verify cfssl and cfssljson version 1.4.1 or higher is installed:
+Verify cfssl and cfssljson version 1.4.1 or higher is installed:
 ```
 cfssl version
 ```
@@ -41,7 +41,7 @@ chmod +x kubectl
 sudo mv kubectl /usr/local/bin/
 ```
 ### Verification
-#### Verify kubectlversion 1.21.0 or higher is installed:
+Verify kubectlversion 1.21.0 or higher is installed:
 ```
 kubectl version --client
 ```
