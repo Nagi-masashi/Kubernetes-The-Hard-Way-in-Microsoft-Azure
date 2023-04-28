@@ -1,6 +1,7 @@
 # Generating Kubernetes Configuration Files for Authentication
 ## The kubelet Kubernetes Configuration File
-worker_instance = [k8s-dev-worker-0, k8s-dev-worker-1, k8s-dev-worker-2,…]
+worker_instance = [k8s-dev-worker-0, k8s-dev-worker-1, k8s-dev-worker-2,…]  
+KUBERNETES_PUBLIC_ADDRESS = controller_loadbalancer (controller_ip for single node)
 ```
 kubectl config set-cluster kubernetes-the-hard-way \
     --certificate-authority=ca.pem \
@@ -23,7 +24,7 @@ Results:
 ${worker_instance}.kubeconfig
 ```
 ## The kube-proxy Kubernetes Configuration File
-KUBERNETES_PUBLIC_ADDRESS = controller_loadbalancer (シングルノードの場合はcontroller_ip)
+KUBERNETES_PUBLIC_ADDRESS = controller_loadbalancer (controller_ip for single node)
 ```
 kubectl config set-cluster kubernetes-the-hard-way \
     --certificate-authority=ca.pem \
