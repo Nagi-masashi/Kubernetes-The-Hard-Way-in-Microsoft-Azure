@@ -2,7 +2,7 @@
 ```
 wget https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.6.4/deploy/static/provider/cloud/deploy.yaml
 ```
-deploy.yamlのvalidatingwebhookconfiguration.webhook.rules.apiVersionsを[v1]から[v1beta1]へ変更
+Change validatingwebhookconfiguration.webhook.rules.apiVersions in deploy.yaml from [v1] to [v1beta1].
 ```
 kubectl apply -f deploy.yaml
 ```
@@ -75,6 +75,8 @@ curl ${worker-instance-ip}:30735 -H "host:nginx.example.com"
 ```
 curl ${worker-instance-ip}:30735 -H "host:web.example.com"
 ```
-portは出力されたingress-nginx-controllerのportを参照する
+Port refers to the output ingress-nginx-controller port.
 
-同じ接続先にもかかわらず、ホストによって表示が変わることを確認
+Confirm that the display changes depending on the host even though the destination is the same.
+
+Prev: [Avi Deployment Guide for Microsoft Azure](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/12-Avi%20Deployment%20Guide%20for%20Microsoft%20Azure.md)
