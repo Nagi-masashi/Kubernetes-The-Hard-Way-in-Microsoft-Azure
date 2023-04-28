@@ -1,8 +1,8 @@
 # Configuring kubectl for Remote Access
-bastionから行うことを推奨
+Recommended from bastion.
 
 ## The Admin Kubernetes Configuration File
-KUBERNETES_PUBLIC_ADDRESS=controller_loadbalancer(シングルノードの場合、controller_ip)
+KUBERNETES_PUBLIC_ADDRESS=controller_loadbalancer (controller_ip for single node).
 
 ```
 kubectl config set-cluster kubernetes-the-hard-way \
