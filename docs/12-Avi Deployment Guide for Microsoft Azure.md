@@ -68,3 +68,6 @@ Avi controllerの設定に合うように編集する
 ```
 helm install ako/ako --generate-name --version 1.9.1 -f values.yaml --set ControllerSettings.controllerHost=20.46.116.91 --set avicredentials.username=admin --set avicredentials.password=Password1234 --namespace=avi-system
 ```
+
+Next: [NGINX Ingress Controller Installation](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/13-NGINX%20Ingress%20Controller%20Installation.md)  
+Prev: [Octant and antrea-octant-plugin installation](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/11-Octant%20and%20antrea-octant-plugin%20installation.md)
