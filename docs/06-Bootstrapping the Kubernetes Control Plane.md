@@ -32,7 +32,7 @@ wget -q --show-progress --https-only --timestamping \
 ```
 sudo vi /etc/systemd/system/kube-apiserver.service
 ```
-INTERNAL_IPは操作しているcontrollerのprivate_ip
+INTERNAL_IP is the private_ip of the controller you are operating
 ```
 [Unit]
 Description=Kubernetes API Server
@@ -110,7 +110,7 @@ RestartSec=5
 [Install]
 WantedBy=multi-user.target
 ```
-—cluster-cidrはクラスター内のpodのcidr(設定変更可能)
+—cluster-cidr is the cidr of the pod in the cluster (configurable)
 
 ## Configure the Kubernetes Scheduler
 ```
@@ -201,3 +201,6 @@ subjects:
     name: kubernetes
 EOF
 ```
+
+Next: [Bootstrapping the Kubernetes Worker Nodes](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/07-Bootstrapping%20the%20Kubernetes%20Worker%20Nodes.md)  
+Prev: [Bootstrapping the etcd Cluster](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/05-Bootstrapping%20the%20etcd%20Cluster.md)
