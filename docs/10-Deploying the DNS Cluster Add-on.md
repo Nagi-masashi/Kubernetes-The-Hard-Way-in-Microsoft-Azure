@@ -36,3 +36,6 @@ Address 1: 10.32.0.10 kube-dns.kube-system.svc.cluster.local
 Name:      kubernetes
 Address 1: 10.32.0.1 kubernetes.default.svc.cluster.local
 ```
+
+Next: [Octant and antrea-octant-plugin installation](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/11-Octant%20and%20antrea-octant-plugin%20installation.md)  
+Prev: [Deploying antrea](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/09-Deploying%20antrea.md)
