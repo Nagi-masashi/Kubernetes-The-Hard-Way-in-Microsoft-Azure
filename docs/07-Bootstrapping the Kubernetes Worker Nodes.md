@@ -12,9 +12,8 @@ The commands in this lab must be run on each worker instance: worker-0, worker
 ```
 sudo swapon --show
 ```
-何も表示されなければswapはenabaleになっている
+If output is empthy then swap is not enabled. If swap is enabled run the following command to disable swap immediately:
 
-もし表示された場合、以下のコマンドを打つ。
 ```
 sudo swapoff -a
 ```
@@ -233,18 +232,6 @@ EOF
   sudo systemctl start containerd kubelet kube-proxy
 }
 ```
-## Verification
-どれか一つのcontrollerから行う。
-```
-kubectl get nodes --kubeconfig admin.kubeconfig
-```
-output
-```
-NAME       STATUS   ROLES    AGE   VERSION
-worker-0   Ready    <none>   22s   v1.24.0
-```
-
-メモ：workerに戻る
 
 ## Configuring iptables
 kubernetesがnftables未対応のためlegacy modeへ変更
@@ -270,3 +257,14 @@ net.ipv4.ip_forward= 1
 EOF
 ```
 workerの再起動推奨
+
+## Verification
+From any one controller, run the following command.
+```
+kubectl get nodes --kubeconfig admin.kubeconfig
+```
+output
+```
+NAME       STATUS   ROLES    AGE   VERSION
+worker-0   Ready    <none>   22s   v1.24.0
+```
