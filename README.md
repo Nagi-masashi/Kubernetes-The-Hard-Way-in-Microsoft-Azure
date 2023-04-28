@@ -4,7 +4,7 @@ It is published on GitHub.
 This tutorial it was built on azure, not on GCP.
 Kubernetes version is from 1.21 to 1.24.  
 I also installed Octant, antrea-octant-plugin, Antrea Container Networking and AVI Kubernetes Operator (AKO) for Ingress.  
-If no VM is specified, execute the command from bastion.
+When building a cluster, if no VM is specified, execute the command from bastion.
 
 # Cluster Details
 + kubernetes v1.24.0
