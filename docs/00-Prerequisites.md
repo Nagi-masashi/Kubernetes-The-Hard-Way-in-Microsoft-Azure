@@ -20,3 +20,5 @@ Public IP　no
 + worker.  
 Name. k8s-dev-worker-0.  
 Public IP　no
+
+Next: [Installing the Client Tools](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/01-Installing%20the%20Client%20Tools.md)
