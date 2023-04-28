@@ -68,7 +68,7 @@ cat <<EOF | sudo tee /etc/cni/net.d/10-bridge.conf
     "ipam": {
         "type": "host-local",
         "ranges": [
-          [{"subnet": "${POD_CIDR}"}]
+          [{"subnet": "172.100.0.0/24"}]
         ],
         "routes": [{"dst": "0.0.0.0/0"}]
     }
