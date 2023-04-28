@@ -23,9 +23,9 @@ wget -q --show-progress --https-only --timestamping \
 ```
 sudo vi /etc/systemd/system/etcd.service
 ```
-host-nameは操作しているcontrollerのhost-name
+host-name is the host-name of the operating controller.
 
-INTERNAL_IPは操作しているcontrollerのprivate_ip
+INTERNAL_IP is the private_ip of the controller you are operating.
 ```
 [Unit]
 Description=etcd
@@ -57,7 +57,7 @@ RestartSec=5
 [Install]
 WantedBy=multi-user.target
 ```
---initial-clusterは全てのcontrollerのhost-nameとhttpsを記入
+--initial-cluster enter host-name and https of all controllers
 
 ## Start the etcd Server
 ```
@@ -81,3 +81,6 @@ output
 f98dc20bce6225a0, started, controller-0, https://{controller_ip}:2380, https://{controller_ip}:2379, false
 ffed16798470cab5, started, controller-1, https://{controller_ip}:2380, https://{controller_ip}:2379, false
 ```
+
+Next: [Bootstrapping the Kubernetes Control Plane](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/06-Bootstrapping%20the%20Kubernetes%20Control%20Plane.md)  
+Prev: [Generating the Data Encryption Config and Key](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/04-Generating%20the%20Data%20Encryption%20Config%20and%20Key.md)
