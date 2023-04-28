@@ -268,3 +268,5 @@ output
 NAME       STATUS   ROLES    AGE   VERSION
 worker-0   Ready    <none>   22s   v1.24.0
 ```
+Next: [Configuring kubectl for Remote Access](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/08-Configuring%20kubectl%20for%20Remote%20Access.md)  
+Prev: [Bootstrapping the Kubernetes Control Plane](https://github.com/Nagi-masashi/kubernetes/blob/main/docs/06-Bootstrapping%20the%20Kubernetes%20Control%20Plane.md)
