@@ -166,9 +166,9 @@ runtimeRequestTimeout: "15m"
 tlsCertFile: "/var/lib/kubelet/${HOSTNAME}.pem"
 tlsPrivateKeyFile: "/var/lib/kubelet/${HOSTNAME}-key.pem"
 ```
-podCIDRはnode内のpod_cidr
+podCIDR is the pod_cidr inside the node.
 
-kubernetes control manager で設定したcluster_cidrの範囲内にすること(設定変更可能)
+Must be within the cluster_cidr range set by kubernetes control manager (settings can be changed).
 
 ```
 cat <<EOF | sudo tee /etc/systemd/system/kubelet.service
@@ -234,7 +234,7 @@ EOF
 ```
 
 ## Configuring iptables
-kubernetesがnftables未対応のためlegacy modeへ変更
+Change to legacy mode because kubernetes does not support nftables.
 ```
 update-alternatives --list iptables
 ```
@@ -242,7 +242,7 @@ update-alternatives --list iptables
 sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
 ```
 ## Verification
-リスト内が空ではないことを確認する
+Make sure the list is not empty.
 ```
 sudo iptables -L
 ```
