@@ -24,7 +24,7 @@ wget https://raw.githubusercontent.com/antrea-io/antrea/main/build/yamls/antrea-
   kubectl config use-context default --kubeconfig=octant.kubeconfig
 }
 ```
-Result
+Results:
 ```
 octant.kubeconfig
 ```
