@@ -2,7 +2,33 @@
 ```
 wget https://raw.githubusercontent.com/antrea-io/antrea/main/build/yamls/antrea-octant.yml
 ```
-Change server in admin.kubeconfig to kubernetes_public_ip (copy admin.kubeconfig and modify it to new octant.kubeconfig)
+```
+{
+  kubectl config set-cluster kubernetes-the-hard-way \
+    --certificate-authority=ca.pem \
+    --embed-certs=true \
+    --server=https://${kubernetes_public_ip}:6443 \
+    --kubeconfig=octant.kubeconfig
+
+  kubectl config set-credentials admin \
+    --client-certificate=admin.pem \
+    --client-key=admin-key.pem \
+    --embed-certs=true \
+    --kubeconfig=octant.kubeconfig
+
+  kubectl config set-context default \
+    --cluster=kubernetes-the-hard-way \
+    --user=admin \
+    --kubeconfig=octant.kubeconfig
+
+  kubectl config use-context default --kubeconfig=octant.kubeconfig
+}
+```
+Result
+```
+octant.kubeconfig
+```
+Or change server in admin.kubeconfig to kubernetes_public_ip (copy admin.kubeconfig and modify it to new octant.kubeconfig)
 ```
 kubectl create secret generic octant-kubeconfig --from-file=admin.conf=octant.kubeconfig -n kube-system
 ```
